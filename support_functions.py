@@ -1042,6 +1042,9 @@ def inv_sin2_function(nr_of_qubits):
     return gate
 
 def get_coupling_map(q):
+    """
+    The coupling map that is used on a hypothetical machine with q qubits.
+    """
     if(q==4):
         coupling_map = CouplingMap([[0,1], [1,0], [1,2], [2,1], [1,3], [3,1]])
     elif(q==5):
